@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Sách tập vẽ - Bé tập tô, tập vẽ</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="img_description">Image Button</string>
+    <string name="onboarding_step3">Hãy chọn tôi đi nào</string>
+    <string name="onboarding_step1">Các bé hãy đầu với việc tập tô nhé!</string>
+    <string name="onboarding_step2">Rất nhiều động vật dễ thương đang đợi bé</string>
+    <string name="lock_kid">Khóa trẻ em</string>
+    <string name="input">Nhập:</string>
+    <string name="remote_ads">Hàng tháng</string>
+    <string name="full_purchase">Hàng năm</string>
+    <string name="coming_soon">Sắp ra mắt</string>
+    <string name="feature_release">Cập nhật ngay!!!</string>
+    <string name="feature_comming_soon">Tính năng dạy vẽ sắp được ra mắt</string>
+    <string name="transition_collection">collection</string>
+    <string name="learn_by_step">Bé xem và vẽ theo các nét mẫu</string>
+    <string name="review">Đánh giá</string>
+    <string name="share">Chia sẻ</string>
+    <string name="show_ads">Xem quảng cáo</string>
+    <string name="remove_ads_description">Loại bỏ quảng cáo khi sử dụng ứng dụng</string>
+    <string name="premium_description">Mở khóa bộ sưu tập cùng toàn bộ tính nắng và không có quảng cáo</string>
+    <string name="thank_for_buy_product"><![CDATA[Cảm ơn bạn đã mua sản phẩm <3]]></string>
+    <string name="you_are_premium">Premium</string>
+    <string name="you_purchased_ads">Đã gỡ bỏ quảng cáo</string>
+    <string name="share_for_get_access_collection">Chia sẻ để có một lần mở bộ sưu tập</string>
+    <string name="show_ads_for_get_access_collection">Xem quảng cáo có 5 lần mở bộ sưu tập</string>
+    <string name="purchase_now_to_unlock">Mua ứng dụng để mở bộ sưu tập</string>
+    <string name="buy_app">Mua ứng dụng</string>
+    <string name="share_facebook_collection_content">“Bé tập tô - Bé học vẽ” ứng dụng hội họa hàng đầu dành cho bé</string>
+    <string name="share_facebook_home_content">Phần mềm vẽ tốt nhất dành cho bé. Tải ngay “Bé tập tô - Bé học vẽ ngay”</string>
+    <string name="share_facebook_replay">Chia sẻ Facebook để có 1 lượt sử dụng tính năng này</string>
+    <string name="purchase_now_to_unlock_feature">Mua ứng dụng để mở khóa toàn bộ tính năng</string>
+    <string name="back_to_app"><![CDATA[Hãy chạm để khám phá thế giới hội họa nào <3]]></string>
+    <string name="unlock">Mở khoá</string>
+    <string name="collection_animal">Động vật</string>
+    <string name="number">Chữ Số</string>
+    <string name="alphabet">Chữ Cái</string>
+    <string name="collection_animal_water">Động vật dưới nước</string>
+    <string name="collection_monster">Quái vật</string>
+    <string name="collection_cartoon">Nhân vật hoạt hình</string>
+    <string name="collection_transport">Phương tiện</string>
+    <string name="supper_hero">Siêu anh hùng</string>
+    <string name="unicorns">Kỳ lân</string>
+    <string name="pokemon">Pokemon</string>
+</resources>

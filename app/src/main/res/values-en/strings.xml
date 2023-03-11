@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Paper lion</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="img_description">Image Button</string>
+    <string name="onboarding_step3">Hey!!! I\'m here</string>
+    <string name="onboarding_step1">Start with drawing color</string>
+    <string name="onboarding_step2">Cute animal</string>
+    <string name="lock_kid">Lock Kid</string>
+    <string name="input">Enter:</string>
+    <string name="remote_ads">Monthly</string>
+    <string name="full_purchase">Yearly</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="feature_release">Update now!!!</string>
+    <string name="feature_comming_soon">This feature will coming soon this month</string>
+    <string name="transition_collection">collection</string>
+    <string name="learn_by_step">Baby learn to draw step by step</string>
+    <string name="review">Review</string>
+    <string name="share">Share</string>
+    <string name="show_ads">Watch ads video</string>
+    <string name="remove_ads_description">Remove ads</string>
+    <string name="premium_description">Unlock all features</string>
+    <string name="thank_for_buy_product"><![CDATA[Thank for use application <3]]></string>
+    <string name="you_are_premium">Premium</string>
+    <string name="you_purchased_ads">Ads is removed</string>
+    <string name="share_for_get_access_collection">Share to have 1 time open collection</string>
+    <string name="show_ads_for_get_access_collection">Watch ads video to have 3 times open collection</string>
+    <string name="purchase_now_to_unlock">Go to Premium to unlock all collections</string>
+    <string name="buy_app">Buy App</string>
+    <string name="share_facebook_collection_content">“Drawing Book - Learning drawing” is best Drawing app for kid</string>
+    <string name="share_facebook_home_content">Best Drawing Application for kid. Download now!!!</string>
+    <string name="share_facebook_replay">Share Facebook to have 1 time use this feature</string>
+    <string name="purchase_now_to_unlock_feature">Go Premium to to unlock all features</string>
+    <string name="back_to_app"><![CDATA[Touch to discovery painting world <3]]></string>
+    <string name="unlock">Go Premium</string>
+    <string name="collection_animal">Animal</string>
+    <string name="collection_animal_water">Animal under water</string>
+    <string name="collection_monster">Monster</string>
+    <string name="collection_cartoon">Cartoon</string>
+    <string name="collection_transport">Transport</string>
+    <string name="number">Number</string>
+    <string name="alphabet">Alphabet</string>
+    <string name="supper_hero">Superheros</string>
+    <string name="unicorns">Unicorns</string>
+    <string name="pokemon">Pokemon</string>
+</resources>

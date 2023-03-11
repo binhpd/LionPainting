@@ -1,0 +1,233 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_screen">
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLanguage"
+        android:layout_width="@dimen/ic_back_size"
+        android:layout_height="@dimen/ic_back_size"
+        android:src="@drawable/bg_language_vn" />
+
+    <ImageView
+        android:id="@+id/ivMute"
+        android:layout_width="@dimen/ic_back_size"
+        android:layout_height="@dimen/ic_back_size"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_mute"
+        app:layout_constraintStart_toEndOf="@+id/ivLanguage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ivStore"
+        android:layout_width="@dimen/width_store"
+        android:layout_height="@dimen/height_store"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/img_description"
+        android:background="@drawable/bg_unlock_store"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+        <com.hiccup.kidpainting.view.KidTextView
+            android:id="@+id/tvUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unlock"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/borrow"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivSale"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_sale"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/ivStore"
+        app:layout_constraintStart_toStartOf="@+id/ivStore"
+        app:layout_constraintTop_toBottomOf="@+id/ivStore" />
+
+    <RelativeLayout
+        android:id="@+id/groupColoring"
+        android:layout_width="@dimen/width_btn_main"
+        android:layout_height="@dimen/height_btn_main"
+        android:layout_marginLeft="160dp"
+        android:layout_marginStart="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTitle">
+        <ImageView
+            android:layout_width="@dimen/width_btn_main"
+            android:layout_height="@dimen/height_btn_main"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bg_feature" />
+
+        <ImageView
+            android:layout_width="@dimen/size_logo_feature"
+            android:layout_height="@dimen/size_logo_feature"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_painting"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ivNameColoring"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_feature_name"
+            android:src="@drawable/ic_painting_name"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/groupLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_btn_main"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="@+id/groupColoring"
+        app:layout_constraintTop_toBottomOf="@+id/groupColoring">
+        <ImageView
+            android:layout_width="@dimen/width_btn_main"
+            android:layout_height="@dimen/height_btn_main"
+            android:src="@drawable/ic_bg_feature"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/size_logo_feature"
+            android:layout_height="@dimen/size_logo_feature"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_learning"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ivLearningName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_feature_name"
+            android:src="@drawable/ic_learning_name"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ivPainting"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_btn_main"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivGallery"
+        app:layout_constraintTop_toBottomOf="@+id/ivGallery">
+
+        <ImageView
+            android:layout_width="@dimen/width_btn_main"
+            android:layout_height="@dimen/height_btn_main"
+            android:src="@drawable/ic_bg_feature"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/size_logo_feature"
+            android:layout_height="@dimen/size_logo_feature"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_feestyle"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ivFreeStyleName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_feature_name"
+            android:src="@drawable/ic_freestyle_name"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ivGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_btn_main"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTitle"
+        app:layout_constraintVertical_bias="0.017">
+
+        <ImageView
+            android:layout_width="@dimen/width_btn_main"
+            android:layout_height="@dimen/height_btn_main"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bg_feature" />
+
+        <ImageView
+            android:layout_width="@dimen/size_logo_feature"
+            android:layout_height="@dimen/size_logo_feature"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_gallery" />
+
+        <ImageView
+            android:id="@+id/ivGalleryName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_feature_name"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_gallery_name" />
+    </RelativeLayout>
+
+    <com.hiccup.kidpainting.view.KidTextView
+        android:id="@+id/tvReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_small"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/review"
+        android:textColor="@color/tumblr_red"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/groupShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/ic_back_size"
+            android:layout_height="@dimen/ic_back_size"
+            android:src="@drawable/ic_share" />
+        <com.hiccup.kidpainting.view.KidTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/tumblr_orange"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

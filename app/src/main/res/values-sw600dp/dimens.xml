@@ -1,0 +1,33 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="photo_size_height">150dp</dimen>
+    <dimen name="photo_size_width">200dp</dimen>
+    <dimen name="width_btn_main">260dp</dimen>
+    <dimen name="height_btn_main">160dp</dimen>
+    <dimen name="ic_back_size">80dp</dimen>
+    <dimen name="menu_util_size">80dp</dimen>
+    <dimen name="drawing_view_margin">120dp</dimen>
+    <dimen name="ic_tool_size">100dp</dimen>
+
+    <dimen name="brush_size_1">12dp</dimen>
+    <dimen name="brush_size_2">34dp</dimen>
+    <dimen name="brush_size_4">48dp</dimen>
+    <dimen name="brush_size_erase">40dp</dimen>
+
+    <dimen name="color_size">50dp</dimen>
+    <dimen name="tick_color_size">22dp</dimen>
+    <dimen name="margin_preview_photo">100dp</dimen>
+    <dimen name="collection_size">400dp</dimen>
+    <dimen name="width_collection_name">280dp</dimen>
+    <dimen name="height_collection_name">140dp</dimen>
+    <dimen name="width_store">200dp</dimen>
+    <dimen name="height_store">150dp</dimen>
+    <dimen name="number_size">60dp</dimen>
+    <dimen name="text_size_medium">30sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="size_logo_feature">120dp</dimen>
+    <dimen name="height_feature_name">50dp</dimen>
+
+</resources>

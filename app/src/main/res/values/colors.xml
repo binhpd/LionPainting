@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_yellow">#ff9f1c</color>
+    <color name="black">#000000</color>
+
+    <color name="tumblr_orange">#F2992E</color>
+    <color name="tumblr_red">#D95E40</color>
+
+    <color name="table_5">#009900</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_onboarding">#66FF0000</color>
+    <color name="colorAccent">#F2992E</color>
+    <color name="primary_bg_blue">#1586cc</color>
+    <color name="primary_bg_screen">#10c410</color>
+    <color name="primary_bg_brown">#de953d</color>
+    <color name="primary_bg_yellow">#f9da55</color>
+    <color name="primary_bg_yellow_press">#968644</color>
+    <color name="borrow">#de953d</color>
+</resources>

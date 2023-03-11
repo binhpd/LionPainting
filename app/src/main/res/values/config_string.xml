@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ads_app_id">ca-app-pub-9529946139428967~9882334819</string>
+    <string name="ads_unit_id_banner">ca-app-pub-9529946139428967/2079866419</string>
+    <string name="ads_unit_id_interstitial">ca-app-pub-9529946139428967/7650469864</string>
+    <string name="ads_unit_id_reward">ca-app-pub-9529946139428967/1213414098</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="package_auth">com.hiccup.kidpainting</string>
+    <string name="facebook_app_id">195906491324929</string>
+    <string name="fb_login_protocol_scheme">fb195906491324929</string>
+    <string name="facebook_auth">com.facebook.app.FacebookContentProvider.com.hiccup.kidpainting</string>
+</resources>

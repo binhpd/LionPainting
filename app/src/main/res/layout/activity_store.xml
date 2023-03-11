@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_main_screen"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/btn_back_size"
+        android:layout_height="@dimen/btn_back_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/img_description"
+        android:scaleType="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/groupRemoveAds"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_medium"
+            android:paddingLeft="@dimen/space_medium"
+            android:paddingRight="@dimen/space_medium"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_green">
+
+            <com.hiccup.kidpainting.view.KidTextView
+                android:id="@+id/tvTitleRemoveAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/remote_ads"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:id="@+id/iv_remove_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@+id/tvTitleRemoveAds">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/img_description"
+                    android:src="@drawable/ic_crown" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivCrown"
+                    android:layout_alignBottom="@+id/tvPriceFullPurchase"
+                    android:layout_toEndOf="@+id/ivCrown"
+                    android:layout_toRightOf="@+id/ivCrown"
+                    android:contentDescription="@string/img_description"
+                    android:src="@drawable/ic_remove_ads" />
+            </LinearLayout>
+
+
+
+            <com.hiccup.kidpainting.view.KidTextView
+                android:id="@+id/tvPriceRemoveAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleRemoveAds"
+                android:layout_toRightOf="@+id/iv_remove_ads"
+                android:gravity="center"
+                tools:text="d 23.000"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+            <com.hiccup.kidpainting.view.KidTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/premium_description"
+                android:textColor="@color/white"
+                android:layout_below="@+id/iv_remove_ads"
+                android:gravity="center"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/groupFullPurchase"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_medium"
+            android:paddingLeft="@dimen/space_medium"
+            android:paddingRight="@dimen/space_medium"
+            android:layout_toRightOf="@+id/groupRemoveAds"
+            android:background="@drawable/bg_borow">
+
+            <com.hiccup.kidpainting.view.KidTextView
+                android:id="@+id/tvTitleFullPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_purchase"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/groupIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@+id/tvTitleFullPurchase">
+                <ImageView
+                    android:id="@+id/ivCrown"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/img_description"
+                    android:src="@drawable/ic_crown" />
+
+                <ImageView
+                    android:id="@+id/iv_remove_ads2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivCrown"
+                    android:layout_alignBottom="@+id/tvPriceFullPurchase"
+                    android:layout_toEndOf="@+id/ivCrown"
+                    android:layout_toRightOf="@+id/ivCrown"
+                    android:contentDescription="@string/img_description"
+                    android:src="@drawable/ic_remove_ads" />
+            </LinearLayout>
+
+
+            <com.hiccup.kidpainting.view.KidTextView
+                android:id="@+id/tvPriceFullPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleFullPurchase"
+                android:layout_toRightOf="@+id/groupIcon"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <com.hiccup.kidpainting.view.KidTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/premium_description"
+                android:textColor="@color/white"
+                android:layout_below="@+id/groupIcon"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivSale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-15dp"
+            android:src="@drawable/ic_sale"
+            android:layout_below="@+id/groupFullPurchase"
+            android:layout_alignLeft="@+id/groupFullPurchase"/>
+
+        <ImageView
+            android:id="@+id/iv_full_purchase"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/btn_store_margin_vertical"
+            android:layout_marginStart="@dimen/btn_store_margin_vertical"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/btn_full_purchase"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

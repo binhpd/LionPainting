@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_screen">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/ic_back_size"
+        android:layout_height="@dimen/ic_back_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/space_5dp"
+        android:layout_marginStart="@dimen/space_5dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/ic_btn_back"
+        android:contentDescription="@string/img_description"
+        android:scaleType="center" />
+
+    <com.hiccup.kidpainting.view.KidTextView
+        android:id="@+id/img_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_15dp"
+        android:textSize="40sp"
+        android:text="@string/lock_kid"
+        android:textColor="@color/tumblr_red"/>
+
+    <RelativeLayout
+        android:id="@+id/vpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_text"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/space_3dp"
+        android:gravity="center">
+
+        <com.hiccup.kidpainting.view.KidTextView
+            android:id="@+id/tvKeyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input"
+            android:textColor="@color/tumblr_orange"
+            android:textSize="24sp"/>
+
+        <com.hiccup.kidpainting.view.KidTextView
+            android:id="@+id/tvLockKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Một, chín, hai"
+            android:layout_toRightOf="@+id/tvKeyTitle"
+            android:textColor="@color/table_5"
+            android:textSize="24sp"
+            android:layout_marginLeft="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vpass">
+
+        <ImageView
+            android:id="@+id/num1"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/num2"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num1"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/num2"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num2" />
+
+        <ImageView
+            android:id="@+id/num3"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/num2"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num3" />
+
+        <ImageView
+            android:id="@+id/num4"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_below="@+id/num1"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/num5"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num4" />
+
+        <ImageView
+            android:id="@+id/num5"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_below="@+id/num2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num5" />
+
+        <ImageView
+            android:id="@+id/num6"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_below="@+id/num3"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/num5"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num6" />
+
+        <ImageView
+            android:id="@+id/num7"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_below="@+id/num4"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/num8"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num7" />
+
+        <ImageView
+            android:id="@+id/num8"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_below="@+id/num5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num8" />
+
+        <ImageView
+            android:id="@+id/num9"
+            android:layout_width="@dimen/number_size"
+            android:layout_height="@dimen/number_size"
+            android:layout_below="@+id/num6"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/num8"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/bg_num9" />
+
+        <ImageView
+            android:id="@+id/btn_unlock"
+            android:layout_width="@dimen/btn_width_200dp"
+            android:layout_height="@dimen/btn_height_50dp"
+            android:layout_below="@+id/num8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/btn_lock" />
+    </RelativeLayout>
+</RelativeLayout>

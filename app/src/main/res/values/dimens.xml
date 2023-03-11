@@ -1,0 +1,61 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="color_size">30dp</dimen>
+
+    <dimen name="brush_size_1">8dp</dimen>
+    <dimen name="brush_size_2">16dp</dimen>
+    <dimen name="brush_size_4">30dp</dimen>
+
+    <dimen name="brush_size_erase">20dp</dimen>
+
+    <dimen name="width_btn_main">140dp</dimen>
+    <dimen name="height_btn_main">100dp</dimen>
+    <dimen name="paint_line_size_width">10dp</dimen>
+    <dimen name="navigation_size">40dp</dimen>
+    <dimen name="space_30dp">30dp</dimen>
+    <dimen name="drawing_view_margin">80dp</dimen>
+    <dimen name="drawing_view_margin_right">110dp</dimen>
+    <dimen name="boarding_view_margin_right">75dp</dimen>
+
+    <dimen name="btn_back_size">48dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="space_5dp">5dp</dimen>
+    <dimen name="space_15dp">15dp</dimen>
+    <dimen name="number_size">48dp</dimen>
+    <dimen name="btn_height_50dp">50dp</dimen>
+    <dimen name="btn_width_200dp">200dp</dimen>
+    <dimen name="space_3dp">3dp</dimen>
+    <dimen name="btn_store_margin_vertical">10dp</dimen>
+    <dimen name="collection_size">250dp</dimen>
+    <dimen name="ic_tool_size">80dp</dimen>
+    <dimen name="menu_util_size">50dp</dimen>
+    <dimen name="distance_transfer_meu">20dp</dimen>
+    <dimen name="ic_back_size">56dp</dimen>
+    <dimen name="margin_back_button">8dp</dimen>
+    <dimen name="photo_size_height">105dp</dimen>
+    <dimen name="photo_size_width">140dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="lock_collection_size">80dp</dimen>
+    <dimen name="lock_graphic_size">50dp</dimen>
+    <dimen name="tick_color_size">18dp</dimen>
+    <dimen name="margin_preview_photo">70dp</dimen>
+    <dimen name="width_collection_name">170dp</dimen>
+    <dimen name="height_collection_name">100dp</dimen>
+    <dimen name="width_store">120dp</dimen>
+    <dimen name="height_store">100dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="space_small">8dp</dimen>
+    <dimen name="space_medium">16dp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_largex">36sp</dimen>
+    <dimen name="radius_bg">16dp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_button_size">20sp</dimen>
+    <dimen name="stroke_rounder">2dp</dimen>
+    <dimen name="size_logo_feature">60dp</dimen>
+    <dimen name="height_feature_name">35dp</dimen>
+    <dimen name="margin_feature_name">20dp</dimen>
+</resources>
