@@ -1,14 +1,17 @@
 package com.hiccup.kidpainting.activities
 
-import android.app.Activity
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
-import androidx.viewbinding.ViewBindings
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+import com.hiccup.kidpainting.R
+import com.hiccup.kidpainting.pref.AppPurchase
 import com.hiccup.kidpainting.utilities.AppHelper.getAppLanguage
 
 
@@ -17,7 +20,7 @@ import com.hiccup.kidpainting.utilities.AppHelper.getAppLanguage
  */
 abstract class BaseActivity: AppCompatActivity() {
 
-//    protected var adView: AdView? = null
+    protected var adView: AdView? = null
 //    protected lateinit var mRewardedVideoAd: RewardedVideoAd
     /**
      * get content view of activity
@@ -33,10 +36,14 @@ abstract class BaseActivity: AppCompatActivity() {
         setContentView(binding.root)
         onInitValue()
         loadLanguageResource(getAppLanguage())
-//        MobileAds.initialize(this, getString(R.string.ads_app_id))
+//        MobileAds.initialize(
+//            this
+//        ) {
+//            Log.d("MainActivity", "onInit ads completed")
+//        }
 //        this.adView = findViewById(R.id.adView)
-        initRewardVideo()
-        loadAds()
+//        initRewardVideo()
+//        loadAds()
     }
 
     override fun onResume() {
@@ -57,10 +64,6 @@ abstract class BaseActivity: AppCompatActivity() {
         super.onDestroy()
 //        adView?.destroy()
 //        mRewardedVideoAd.destroy(this)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
     }
 
     protected fun fullScreenRequest() {
@@ -91,25 +94,30 @@ abstract class BaseActivity: AppCompatActivity() {
 
     }
 
+    protected open fun getAdsView() : AdView? {
+        return adView
+    }
+
     private fun loadAds() {
-//        if (adView == null) {
-//            return
-//        }
-//
-//        if (AppPurchase.isRemoveAds(this) || AppPurchase.isFullPurchase(this)) {
-//            adView!!.visibility = View.GONE
-//        } else {
-//            adView!!.visibility = View.VISIBLE
-//            val adRequest = AdRequest.Builder().build()
-//            adView!!.adListener = object: AdListener() {
-//                override fun onAdLoaded() {
-//                    super.onAdLoaded()
-//                    adView!!.visibility = View.VISIBLE
-//                }
-//            }
-//            adView!!.loadAd(adRequest)
-//        }
-//        adView?.resume()
+        adView = getAdsView()
+        if (adView == null) {
+            return
+        }
+
+        if (AppPurchase.instance.isHasPurchase(this)) {
+            adView!!.visibility = View.GONE
+        } else {
+            adView!!.visibility = View.VISIBLE
+            val adRequest = AdRequest.Builder().build()
+            adView!!.adListener = object: AdListener() {
+                override fun onAdLoaded() {
+                    super.onAdLoaded()
+                    adView!!.visibility = View.VISIBLE
+                }
+            }
+            adView!!.loadAd(adRequest)
+        }
+        adView?.resume()
     }
 
     private fun initRewardVideo() {

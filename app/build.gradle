@@ -112,6 +112,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
     implementation("com.android.billingclient:billing:5.1.0")
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
 
     //Room
     kapt "androidx.room:room-compiler:2.5.0"

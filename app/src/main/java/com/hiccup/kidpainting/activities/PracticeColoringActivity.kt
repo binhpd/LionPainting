@@ -65,17 +65,13 @@ class PracticeColoringActivity: BasePaintingActivity(), View.OnClickListener {
     }
 
     private fun initPanel() {
-        binding.mDrawingView!!.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
+        binding.mDrawingView.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
             @SuppressLint("NewApi")
             override fun onGlobalLayout() {
-                binding.mDrawingView!!.viewTreeObserver.removeOnGlobalLayoutListener(this)
+                binding.mDrawingView.viewTreeObserver.removeOnGlobalLayoutListener(this)
                 //now we can retrieve the mWidth and height
-                mDrawingWidth = binding.mDrawingView!!.width
-                mDrawingHeight = binding.mDrawingView!!.height
-                // get screen size
-                val manager = windowManager
-                val metric = DisplayMetrics()
-                manager.defaultDisplay.getMetrics(metric)
+                mDrawingWidth = binding.mDrawingView.width
+                mDrawingHeight = binding.mDrawingView.height
                 preparePainter(index)
             }
         })

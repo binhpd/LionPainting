@@ -1,6 +1,5 @@
 package com.hiccup.kidpainting.activities
 
-//import com.kobakei.ratethisapp.RateThisApp
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -15,12 +14,13 @@ import android.view.Gravity
 import android.view.View
 import androidx.core.app.ActivityOptionsCompat
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.hiccup.kidpainting.R
-import com.hiccup.kidpainting.activities.store.BillingViewModel
-import com.hiccup.kidpainting.activities.store.StoreActivity
 import com.hiccup.kidpainting.databinding.ActivityMainBinding
 import com.hiccup.kidpainting.pref.AppPurchase
 import com.hiccup.kidpainting.services.MediaService
@@ -32,6 +32,8 @@ import com.hiccup.kidpainting.utilities.tracking.FireBaseTracker
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import tourguide.tourguide.TourGuide
+import java.util.*
+
 
 class MainActivity : BasePaintingActivity(), View.OnClickListener {
 
@@ -111,6 +113,32 @@ class MainActivity : BasePaintingActivity(), View.OnClickListener {
             RedirectHelper.redirect(this, intent)
         }, 500)
 
+//        val testDeviceIds = Arrays.asList("f7746de4-6f22-42f6-ad6b-7fd9bb4a45c4")
+//        val configuration = RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build()
+//        MobileAds.setRequestConfiguration(configuration)
+        loadAds()
+    }
+
+    private fun loadAds() {
+        Log.d(TAG, "Google Mobile Ads SDK Version: " + MobileAds.getVersion())
+
+        // Initialize the Mobile Ads SDK with an AdMob App ID.
+        MobileAds.initialize(this) {}
+
+        // Set your test devices. Check your logcat output for the hashed device ID to
+        // get test ads on a physical device. e.g.
+        // "Use RequestConfiguration.Builder().setTestDeviceIds(Arrays.asList("ABCDEF012345"))
+        // to get test ads on this device."
+
+        MobileAds.setRequestConfiguration(
+            RequestConfiguration.Builder().setTestDeviceIds(listOf("EDB36CFA279CE97D75B92AEEFF773524")).build()
+        )
+
+        // Create an ad request.
+        val adRequest = AdRequest.Builder().build()
+
+        // Start loading the ad in the background.
+        binding.adView?.loadAd(adRequest)
     }
 
     private fun showRateApp() {
@@ -147,6 +175,10 @@ class MainActivity : BasePaintingActivity(), View.OnClickListener {
             Glide.with(this).load(R.drawable.ic_learning_name_en).into(binding.ivLearningName!!)
             Glide.with(this).load(R.drawable.ic_freestyle_name_en).into(binding.ivFreeStyleName!!)
         }
+    }
+
+    override fun getAdsView(): AdView? {
+        return binding.adView
     }
 
     private fun trackingSourceOpenedApp() {
